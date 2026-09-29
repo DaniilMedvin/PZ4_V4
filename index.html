@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дисципліни</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+
+  <header class="hero">
+    <div class="hero__stripe" aria-hidden="true"></div>
+    <p class="hero__tag">Практична № 4 · Варіант 4</p>
+    <h1 class="hero__title">Найбільше<br>годин</h1>
+    <p class="hero__sub">XML і JSON: розбір та вивід дисципліни з максимумом годин</p>
+    <div class="hero__zig" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="stage">
+    <section class="panel panel--xml" aria-labelledby="xml-title">
+      <div class="panel__head">
+        <h2 id="xml-title">XML</h2>
+        <a class="link" href="data/disciplines.xml" target="_blank" rel="noopener">Відкрити файл</a>
+      </div>
+      <div class="result" id="xml-result" aria-live="polite"></div>
+      <div class="loader" id="xml-loader" hidden>
+        <label class="loader__label" for="xml-file">Обрати disciplines.xml</label>
+        <input class="loader__input" id="xml-file" type="file" accept=".xml,text/xml">
+      </div>
+    </section>
+
+    <section class="panel panel--json" aria-labelledby="json-title">
+      <div class="panel__head">
+        <h2 id="json-title">JSON</h2>
+        <a class="link" href="data/disciplines.json" target="_blank" rel="noopener">Відкрити файл</a>
+      </div>
+      <div class="result" id="json-result" aria-live="polite"></div>
+      <div class="loader" id="json-loader" hidden>
+        <label class="loader__label" for="json-file">Обрати disciplines.json</label>
+        <input class="loader__input" id="json-file" type="file" accept=".json,application/json">
+      </div>
+    </section>
+
+    <section class="panel panel--table" aria-labelledby="all-title">
+      <div class="panel__head">
+        <h2 id="all-title">Усі дисципліни</h2>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Назва</th>
+              <th scope="col">Годин</th>
+              <th scope="col">Кредитів</th>
+              <th scope="col">Викладач</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot" aria-hidden="true"><span></span></footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

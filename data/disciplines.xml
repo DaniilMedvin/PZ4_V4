@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<disciplines>
+  <discipline>
+    <name>Веб-технології</name>
+    <hours>120</hours>
+    <credits>4</credits>
+    <teacher>Коваленко О. М.</teacher>
+  </discipline>
+  <discipline>
+    <name>Бази даних</name>
+    <hours>150</hours>
+    <credits>5</credits>
+    <teacher>Шевченко І. П.</teacher>
+  </discipline>
+  <discipline>
+    <name>Алгоритми та структури даних</name>
+    <hours>90</hours>
+    <credits>3</credits>
+    <teacher>Бондаренко Т. С.</teacher>
+  </discipline>
+</disciplines>
